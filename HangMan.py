@@ -61,7 +61,7 @@ def main():
         guess = input("Enter a Letter: ").lower()
         # EDGE CASES FOR THE INPUT 
         if len(guess) =! 1 or not guess.isalpha():
-            print("INvalid")
+            print("Invalid")
             continue
         if guess in guessed_letter:
             print(f"{guess} is already guessed")
@@ -80,12 +80,12 @@ def main():
             dispaly_man(wrong_guesses)
             display_answer(answer)
             print("YOU WON!!!")
-            running = false
+            running = False
         elif wrong_guesses => len(hangman_art)-1:
             dispaly_man(wrong_guesses)
             display_answer(answer)
             print("YOU LOSE!!")
-            running = false
+            running = False
 
 
 
